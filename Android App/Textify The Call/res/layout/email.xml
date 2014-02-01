@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter the reciever's email address"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etEmailAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvEmail"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Enter the address"
+        android:textSize="20dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etEmailAdd"
+        android:layout_marginTop="15dp"
+        android:text="Send" />
+
+</RelativeLayout>
